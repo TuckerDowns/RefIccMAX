@@ -45,6 +45,9 @@ Build/XCode/libxml/*.h*
 **/build
 **/xcuserdata
 
+# OSX System Files
+.DS_Store
+
 # copied code
 Tools/CmdLine/IccSpecSepToTiff/TiffImg.cpp
 Tools/CmdLine/IccSpecSepToTiff/TiffImg.h
