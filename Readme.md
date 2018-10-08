@@ -257,12 +257,38 @@ Build/XCode/BuildAll.sh contains a bash Terminal script that can be used to
 build all of the XCODE projects.
 
 Header files and binaries for the libtiff and libxml libraries need to be
-manually installed before the BuildAll.sh script is executed. The libtiff header
-files need to be placed in the Build/XCode/libtiff folder (specified by the
-LibTifSetup.txt file in this folder). The libxml header files need to be placed
-in the Build/XCode/libxml folder (specified by the LibXmlSetup.txt file in this
-folder). (Note: Projects with additional dependencies may not correctly build if
-these folders not set up before running the BuildAll.sh script).
+manually installed before the BuildAll.sh script is executed. Projects with
+additional dependencies may not correctly build if these folders not set up
+before running the BuildAll.sh script.
+
+The libtiff header files specified by LibTifSetup.txt need to be placed  in the
+`Build/XCode/libtiff` folder.
+
+```bash
+#from the project root
+ln -s /usr/include/libxml2/libxml/* ./Build/XCode/libxml/
+```
+
+The libxml header files specified by LibXmlSetup.txt need to be placed in the
+`Build/XCode/libxml` folder. LibTiff can be installed with
+[Homebrew](https://brew.sh/)
+
+```bash
+#from the project root
+brew install libtiff
+ln -s ls/usr/local/lib/libtiff.a \
+/usr/local/include/tiff.h \
+/usr/local/include/tiffconf.h \
+/usr/local/include/tiffio.h \
+/usr/local/include/tiffvers.h \
+./Build/XCode/libtiff
+```
+
+```bash
+#Running BuildAll.sh
+cd Build/XCode/
+./BuildAll.sh
+```
 
 The BuildAll.sh script file will make a copy of the libIccProfLib.a and
 libIccXML.a library binaries into the Build/XCode/lib folder. The libraries in
