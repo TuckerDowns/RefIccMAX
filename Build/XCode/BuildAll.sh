@@ -53,10 +53,10 @@ echo "Building IccXML/CmdLine/IccToXml..."
 xcodebuild -target IccToXML -configuration "$config"
 cp build/$config/IccToXml ../../../Testing
 
-cd ../../../Tools/MacOS-X/RefIccMAXCmm
-echo "Building Tools/MacOS-X/RefIccMAXCmm..."
-xcodebuild -target RefIccMAXCmm -configuration "$config"
+#cd ../../../Tools/MacOS-X/RefIccMAXCmm
+#echo "Building Tools/MacOS-X/RefIccMAXCmm..."
+#xcodebuild -target RefIccMAXCmm -configuration "$config"
 
-cd ../../wxWidget/wxProfileDump/
-echo "Building wxWidget/wxProfileDump..."
-xcodebuild -target wxProfileDump -configuration "$config"
+#cd ../../wxWidget/wxProfileDump/
+#echo "Building wxWidget/wxProfileDump..."
+#xcodebuild -target wxProfileDump -configuration "$config"

@@ -78,6 +78,14 @@
 		5593C5961CC6CAC3007F5186 /* IccEnvVar.h in Headers */ = {isa = PBXBuildFile; fileRef = 5593C5901CC6CAC3007F5186 /* IccEnvVar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5593C5991CC6CAC3007F5186 /* IccSolve.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5593C5911CC6CAC3007F5186 /* IccSolve.cpp */; };
 		5593C59C1CC6CAC3007F5186 /* IccSolve.h in Headers */ = {isa = PBXBuildFile; fileRef = 5593C5921CC6CAC3007F5186 /* IccSolve.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B466748E216D279D005A8BF8 /* IccWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = B466748A216D279D005A8BF8 /* IccWrapper.h */; };
+		B466748F216D279D005A8BF8 /* IccWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = B466748A216D279D005A8BF8 /* IccWrapper.h */; };
+		B4667490216D279D005A8BF8 /* IccTagEmbedIcc.h in Headers */ = {isa = PBXBuildFile; fileRef = B466748B216D279D005A8BF8 /* IccTagEmbedIcc.h */; };
+		B4667491216D279D005A8BF8 /* IccTagEmbedIcc.h in Headers */ = {isa = PBXBuildFile; fileRef = B466748B216D279D005A8BF8 /* IccTagEmbedIcc.h */; };
+		B4667492216D279D005A8BF8 /* IccWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B466748C216D279D005A8BF8 /* IccWrapper.cpp */; };
+		B4667493216D279D005A8BF8 /* IccWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B466748C216D279D005A8BF8 /* IccWrapper.cpp */; };
+		B4667494216D279D005A8BF8 /* IccTagEmbedIcc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B466748D216D279D005A8BF8 /* IccTagEmbedIcc.cpp */; };
+		B4667495216D279D005A8BF8 /* IccTagEmbedIcc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B466748D216D279D005A8BF8 /* IccTagEmbedIcc.cpp */; };
 		FAC854292073E6A000BE8A7B /* IccEnvVar.h in Headers */ = {isa = PBXBuildFile; fileRef = 5593C5901CC6CAC3007F5186 /* IccEnvVar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FAC8542A2073E6A000BE8A7B /* IccSolve.h in Headers */ = {isa = PBXBuildFile; fileRef = 5593C5921CC6CAC3007F5186 /* IccSolve.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FAC8542B2073E6A000BE8A7B /* IccApplyBPC.h in Headers */ = {isa = PBXBuildFile; fileRef = 30FD93831AA4905D0072608A /* IccApplyBPC.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -227,6 +235,10 @@
 		5593C5901CC6CAC3007F5186 /* IccEnvVar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IccEnvVar.h; sourceTree = SOURCE_ROOT; };
 		5593C5911CC6CAC3007F5186 /* IccSolve.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IccSolve.cpp; sourceTree = SOURCE_ROOT; };
 		5593C5921CC6CAC3007F5186 /* IccSolve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IccSolve.h; sourceTree = SOURCE_ROOT; };
+		B466748A216D279D005A8BF8 /* IccWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IccWrapper.h; sourceTree = "<group>"; };
+		B466748B216D279D005A8BF8 /* IccTagEmbedIcc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IccTagEmbedIcc.h; sourceTree = "<group>"; };
+		B466748C216D279D005A8BF8 /* IccWrapper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IccWrapper.cpp; sourceTree = "<group>"; };
+		B466748D216D279D005A8BF8 /* IccTagEmbedIcc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IccTagEmbedIcc.cpp; sourceTree = "<group>"; };
 		D2AAC046055464E500DB518D /* libIccProfLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libIccProfLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC854752073E6A000BE8A7B /* libIccProfLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libIccProfLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -272,6 +284,10 @@
 		30FD93811AA4905D0072608A /* IccProfLib */ = {
 			isa = PBXGroup;
 			children = (
+				B466748D216D279D005A8BF8 /* IccTagEmbedIcc.cpp */,
+				B466748B216D279D005A8BF8 /* IccTagEmbedIcc.h */,
+				B466748C216D279D005A8BF8 /* IccWrapper.cpp */,
+				B466748A216D279D005A8BF8 /* IccWrapper.h */,
 				30FD93CD1AA4905D0072608A /* Makefile.am */,
 				30FD93821AA4905D0072608A /* IccApplyBPC.cpp */,
 				30FD93841AA4905D0072608A /* IccArrayBasic.cpp */,
@@ -395,6 +411,7 @@
 				30FD943B1AA4905D0072608A /* IccProfile.h in Headers */,
 				30FD943C1AA4905D0072608A /* IccProfLibConf.h in Headers */,
 				30FD943D1AA4905D0072608A /* IccProfLibVer.h in Headers */,
+				B466748E216D279D005A8BF8 /* IccWrapper.h in Headers */,
 				30FD943F1AA4905D0072608A /* IccSparseMatrix.h in Headers */,
 				30FD94411AA4905D0072608A /* IccStructBasic.h in Headers */,
 				30FD94431AA4905D0072608A /* IccStructFactory.h in Headers */,
@@ -408,6 +425,7 @@
 				30FD94521AA4905D0072608A /* IccTagProfSeqId.h in Headers */,
 				30FD94541AA4905D0072608A /* IccUtil.h in Headers */,
 				30FD94561AA4905D0072608A /* IccXformFactory.h in Headers */,
+				B4667490216D279D005A8BF8 /* IccTagEmbedIcc.h in Headers */,
 				30FD94571AA4905D0072608A /* icProfileHeader.h in Headers */,
 				30FD945A1AA4905D0072608A /* IccMD5.h in Headers */,
 			);
@@ -440,6 +458,7 @@
 				FAC8543D2073E6A000BE8A7B /* IccProfile.h in Headers */,
 				FAC8543E2073E6A000BE8A7B /* IccProfLibConf.h in Headers */,
 				FAC8543F2073E6A000BE8A7B /* IccProfLibVer.h in Headers */,
+				B466748F216D279D005A8BF8 /* IccWrapper.h in Headers */,
 				FAC854402073E6A000BE8A7B /* IccSparseMatrix.h in Headers */,
 				FAC854412073E6A000BE8A7B /* IccStructBasic.h in Headers */,
 				FAC854422073E6A000BE8A7B /* IccStructFactory.h in Headers */,
@@ -453,6 +472,7 @@
 				FAC8544A2073E6A000BE8A7B /* IccTagProfSeqId.h in Headers */,
 				FAC8544B2073E6A000BE8A7B /* IccUtil.h in Headers */,
 				FAC8544C2073E6A000BE8A7B /* IccXformFactory.h in Headers */,
+				B4667491216D279D005A8BF8 /* IccTagEmbedIcc.h in Headers */,
 				FAC8544D2073E6A000BE8A7B /* icProfileHeader.h in Headers */,
 				FAC8544E2073E6A000BE8A7B /* IccMD5.h in Headers */,
 			);
@@ -554,7 +574,9 @@
 				30FD94471AA4905D0072608A /* IccTagComposite.cpp in Sources */,
 				30FD94491AA4905D0072608A /* IccTagDict.cpp in Sources */,
 				30FD944B1AA4905D0072608A /* IccTagFactory.cpp in Sources */,
+				B4667494216D279D005A8BF8 /* IccTagEmbedIcc.cpp in Sources */,
 				30FD944D1AA4905D0072608A /* IccTagLut.cpp in Sources */,
+				B4667492216D279D005A8BF8 /* IccWrapper.cpp in Sources */,
 				30FD944F1AA4905D0072608A /* IccTagMPE.cpp in Sources */,
 				30FD94511AA4905D0072608A /* IccTagProfSeqId.cpp in Sources */,
 				30FD94531AA4905D0072608A /* IccUtil.cpp in Sources */,
@@ -594,7 +616,9 @@
 				FAC854672073E6A000BE8A7B /* IccTagComposite.cpp in Sources */,
 				FAC854682073E6A000BE8A7B /* IccTagDict.cpp in Sources */,
 				FAC854692073E6A000BE8A7B /* IccTagFactory.cpp in Sources */,
+				B4667495216D279D005A8BF8 /* IccTagEmbedIcc.cpp in Sources */,
 				FAC8546A2073E6A000BE8A7B /* IccTagLut.cpp in Sources */,
+				B4667493216D279D005A8BF8 /* IccWrapper.cpp in Sources */,
 				FAC8546B2073E6A000BE8A7B /* IccTagMPE.cpp in Sources */,
 				FAC8546C2073E6A000BE8A7B /* IccTagProfSeqId.cpp in Sources */,
 				FAC8546D2073E6A000BE8A7B /* IccUtil.cpp in Sources */,
@@ -611,7 +635,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
@@ -634,7 +657,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -654,8 +676,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -687,7 +711,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = NO;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -697,8 +721,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -728,7 +754,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = NO;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 			};
