@@ -1,6 +1,5 @@
 #!/bin/sh
 config="Release"
-MACOSX_DEPLOYMENT_TARGET="10.11"
 
 cd ../../IccProfLib
 echo "Building IccProfLib..."
