@@ -53,10 +53,16 @@ echo "Building IccXML/CmdLine/IccToXml..."
 xcodebuild -target IccToXML -configuration "$config"
 cp build/$config/IccToXml ../../../Testing
 
-#cd ../../../Tools/MacOS-X/RefIccMAXCmm
-#echo "Building Tools/MacOS-X/RefIccMAXCmm..."
-#xcodebuild -target RefIccMAXCmm -configuration "$config"
+# It would be better to make this condidtion into a positive instead of a 
+# negative ("if REFICC_BUILD_GUI"), but that might cause breaking changes
+# for other users build environments
 
-#cd ../../wxWidget/wxProfileDump/
-#echo "Building wxWidget/wxProfileDump..."
-#xcodebuild -target wxProfileDump -configuration "$config"
+if [ ! REFICC_NO_BUILD_GUI ]; then
+    cd ../../../Tools/MacOS-X/RefIccMAXCmm
+    echo "Building Tools/MacOS-X/RefIccMAXCmm..."
+    xcodebuild -target RefIccMAXCmm -configuration "$config"
+
+    cd ../../wxWidget/wxProfileDump/
+    echo "Building wxWidget/wxProfileDump..."
+    xcodebuild -target wxProfileDump -configuration "$config"
+fi
